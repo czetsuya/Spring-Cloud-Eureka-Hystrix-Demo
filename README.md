@@ -1,0 +1,71 @@
+# Spring Cloud Demos
+> This repository contains a set of projects that demonstrates the features of spring cloud.
+
+ - spring-cloud-order-api - contains the order services
+ - spring-cloud-order-business-api - a service use to aggregate data from order and product services
+ - spring-cloud-order-config - project fetching configuration from local git
+ - spring-cloud-order-discovery - service discovery
+ - spring-cloud-order-product-api - contains the product services
+ - spring-cloud-order-zuul-server - server side load balancer
+ - order-git
+
+## Features
+ - External GIT configuration
+ - API Composition
+ - Health check - Actuator
+ - Application matrx - Hystrix
+ - Service discovery - Eureka
+ - Documentation - Swagger
+ - Load balancer - Ribbon / Zuul
+
+## Technologies
+ - Spring Cloud
+ - Hystrix
+ - Eureka
+ - Swagger
+ - Ribbon
+ - Zuul
+ - GIT
+
+# Development Setup
+1. Clone and checkout the repository.
+2. Initialized order-git git repository on your local machine and commit the files. Everytime you change a configuration on these files, you must commit the changes to your local repository.
+3. Double check that the settings in your application and bootstrap properties are correct, specially the paths.
+4. Run the project in this order:
+    - spring-cloud-order-config
+    - spring-cloud-order-discovery
+    - spring-cloud-order-zuul-server
+    - spring-cloud-order-api
+    - spring-cloud-order-product-api
+    - spring-cloud-order-business-api - see Environment Variables section
+5. From spring-cloud-order-api, check if the url is accessible to see if the project successfully starts.
+6. If all goes well, localhost:8762 should be accessible and all the sub-services.
+7. Here are the available services:
+    - localhost:8762/orderbusinessservice/orders
+    - localhost:8762/orderbusinessservice/products
+    - localhost:8762/orderbusinessservice/products/1
+    - localhost:8762/orderbusinessservice/productOrders
+
+## Environment Variables
+If you want to test Zuul load balancer, run at least 2 instances of project spring-cloud-order-business-api project on port 8003, 8004, and so on... 
+
+## Prerequisites
+ - Spring STS
+ - Java 8
+ - GIT
+
+# Authors
+
+* **Edward P. Legaspi** - *Architect* - [czetsuya](https://bitbucket.com/czetsuya)
+
+# URLs
+ * https://bitbucket.com/czetsuya
+
+# Release History
+
+ * 0.0.0.1-SNAPSHOT
+    * Initial commit.
+    * CHANGE: Update docs.
+
+<!-- Markdown link & resource definitions -->
+[czetsuya]: https://bitbucket.com/czetsuya
