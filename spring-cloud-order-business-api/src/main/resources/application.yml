@@ -1,0 +1,15 @@
+server:
+  port: 8003
+management:
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include:
+        - hystrix.stream
+eureka:
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true

@@ -1,0 +1,7 @@
+server.port=8002
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.show-sql=true
+spring.application.name=productservice
+spring.cloud.config.enabled=true
+spring.cloud.config.uri=http://localhost:8000
+spring.cloud.config.fail-fast=true

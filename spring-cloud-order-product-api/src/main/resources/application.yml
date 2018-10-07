@@ -1,0 +1,24 @@
+server:
+  port: 8002
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  application:
+    name: product-api
+  cloud:
+    config:
+      enabled: true
+      uri:
+      - http://192.168.0.41:8000
+      fail-fast: true
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://192.168.0.41:8761/eureka, http://192.168.0.41:8762/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 192.168.0.41
