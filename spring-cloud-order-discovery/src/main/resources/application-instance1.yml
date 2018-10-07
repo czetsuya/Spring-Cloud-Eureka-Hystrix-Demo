@@ -2,7 +2,7 @@ server:
   port: 8761
 eureka:
   instance:
-    hostname: eureka-instance1
+    hostname: ${server.address}
   client:
     service-url:
-      defaultZone: http://eureka-instance2:8762
+      defaultZone: http://192.168.0.243:8762
