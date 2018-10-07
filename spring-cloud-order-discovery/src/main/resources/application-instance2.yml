@@ -2,7 +2,7 @@ server:
   port: 8762
 eureka:
   instance:
-    hostname: order-api-instance2
+    hostname: eureka-instance2
   client:
     service-url:
-      defaultZone: http://order-api-instance1:8761
+      defaultZone: http://eureka-instance1:8761

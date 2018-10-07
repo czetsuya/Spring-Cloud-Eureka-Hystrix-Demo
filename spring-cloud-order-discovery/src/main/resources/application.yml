@@ -12,7 +12,7 @@ eureka:
   environment: local
   client:
     register-with-eureka: true
-    fetch-registry: false
+    fetch-registry: true
   instance:
     prefer-ip-address: true
     appname: eureka
