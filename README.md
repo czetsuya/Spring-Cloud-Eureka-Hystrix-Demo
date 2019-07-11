@@ -1,3 +1,5 @@
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S0YXPX)
+
 # Spring Cloud Demos
 > This repository contains a set of projects that demonstrates the features of spring cloud.
 
