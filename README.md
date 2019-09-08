@@ -28,8 +28,19 @@
  - Ribbon
  - Zuul
  - GIT
+ 
+## Environment Setup
 
-# Development Setup
+1. Initialize a local git repository and add the following 3 files, located in their respective project's src/main/resources folder:
+    - orderservice.properties
+    - productservice.properties
+    - orderbusinessservice.properties
+2. Replace the IP with your own IP. Note that I'm running the apps on 2 machines, you can use a VM.
+    - 192.168.1.7 - is where I run all the applications except
+    - 192.168.1.6 - a eureka server (discovery server) replica
+3. Make sure to commit your changes as these property files will be use by the application.
+
+## Development Setup
 1. Clone and checkout the repository.
 2. Initialized order-git git repository on your local machine and commit the files. Everytime you change a configuration on these files, you must commit the changes to your local repository.
 3. Double check that the settings in your application and bootstrap properties are correct, specially the paths.
@@ -42,11 +53,11 @@
     - spring-cloud-order-business-api - see Environment Variables section
 5. From spring-cloud-order-api, check if the url is accessible to see if the project successfully starts.
 6. If all goes well, localhost:8762 should be accessible and all the sub-services.
-7. Here are the available services:
-    - localhost:8762/orderbusinessservice/orders
-    - localhost:8762/orderbusinessservice/products
-    - localhost:8762/orderbusinessservice/products/1
-    - localhost:8762/orderbusinessservice/productOrders
+7. Here are the available services accessible from zuul api gateway:
+    - <NETWORK_IP>:8762/orders
+    - <NETWORK_IP>:8762/products
+    - <NETWORK_IP>:8762/products/1
+    - <NETWORK_IP>:8762/productOrders
 
 ## Environment Variables
 If you want to test Zuul load balancer, run at least 2 instances of project spring-cloud-order-business-api project on port 8003, 8004, and so on... 
@@ -56,14 +67,14 @@ If you want to test Zuul load balancer, run at least 2 instances of project spri
  - Java 8
  - GIT
 
-# Authors
+## Authors
 
 * **Edward P. Legaspi** - *Architect* - [czetsuya](https://bitbucket.com/czetsuya)
 
-# URLs
+## URLs
  * https://bitbucket.com/czetsuya
 
-# Release History
+## Release History
 
  * 0.0.0.1-SNAPSHOT
     * Initial commit.
