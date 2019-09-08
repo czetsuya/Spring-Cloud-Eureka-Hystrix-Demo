@@ -11,13 +11,13 @@ spring:
     config:
       enabled: true
       uri:
-      - http://192.168.0.41:8000
+      - http://192.168.1.7:8000
       fail-fast: true
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://192.168.0.41:8761/eureka
+      defaultZone: http://192.168.1.6:8761/eureka,http://192.168.1.7:8761/eureka
   instance:
     prefer-ip-address: true

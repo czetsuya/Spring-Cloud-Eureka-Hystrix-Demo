@@ -1,4 +1,0 @@
-feign.hystrix.enabled=true
-management.endpoints.web.exposure.include=hystrix.stream
-management.endpoints.web.base-path=/
-eureka.instance.prefer-ip-address=true
