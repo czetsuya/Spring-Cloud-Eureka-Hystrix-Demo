@@ -58,6 +58,11 @@
     - <NETWORK_IP>:8762/products
     - <NETWORK_IP>:8762/products/1
     - <NETWORK_IP>:8762/productOrders
+8. Config profiles
+    - <NETWORK_IP>:8000/productservice/env
+    - <NETWORK_IP>:8000/orderservice/env
+    - <NETWORK_IP>:8000/orderbusinessservice/env
+    - env can be replace by the project's profile
 
 ## Environment Variables
 If you want to test Zuul load balancer, run at least 2 instances of project spring-cloud-order-business-api project on port 8003, 8004, and so on... 
