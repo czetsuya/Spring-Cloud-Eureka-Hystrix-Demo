@@ -76,10 +76,10 @@ If you want to test Zuul load balancer, run at least 2 instances of project spri
 
 ## Authors
 
-* **Edward P. Legaspi** - *Architect* - [czetsuya](https://bitbucket.com/czetsuya)
+* **Edward P. Legaspi** - *Architect* - [czetsuya](https://github.com/czetsuya)
 
 ## URLs
- * https://bitbucket.com/czetsuya
+ * https://github.com/czetsuya
 
 ## Release History
 
@@ -88,4 +88,4 @@ If you want to test Zuul load balancer, run at least 2 instances of project spri
     * CHANGE: Update docs.
 
 <!-- Markdown link & resource definitions -->
-[czetsuya]: https://bitbucket.com/czetsuya
+[czetsuya]: https://github.com/czetsuya
