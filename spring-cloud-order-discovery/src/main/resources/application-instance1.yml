@@ -5,4 +5,4 @@ eureka:
     hostname: ${server.address}
   client:
     service-url:
-      defaultZone: http://192.168.1.6:8761/eureka # register peer awareness
+      defaultZone: http://192.168.1.101:8761/eureka # register peer awareness
