@@ -54,6 +54,7 @@
 5. From spring-cloud-order-api, check if the url is accessible to see if the project successfully starts.
 6. If all goes well, localhost:8762 should be accessible and all the sub-services.
 7. Here are the available services accessible from zuul api gateway:
+    - <NETWORK_IP>:8762/routes
     - <NETWORK_IP>:8762/orderservice/orders
     - <NETWORK_IP>:8762/productservice/products
     - <NETWORK_IP>:8762/productservice/products/1
