@@ -1,4 +1,4 @@
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S0YXPX)
+**Help me build more open-source projects by becoming my sponsor.*
 
 # Spring Cloud Demos
 > This repository contains a set of projects that demonstrates the features of spring cloud.
